@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whac-A-Mole</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Whac-A-Mole</h1>
+
+    <!-- Score and Timer -->
+    <div class="scoreboard">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="time-left">30</span>s</p>
+    </div>
+
+    <!-- Game Grid -->
+    <div class="grid" id="grid"></div>
+
+    <!-- Restart Button -->
+    <button id="restart-btn">Restart Game</button>
+
+    <!-- Game Over Modal -->
+    <div class="modal" id="game-over-modal">
+      <div class="modal-content">
+        <h2>Game Over!</h2>
+        <p>Your final score: <span id="final-score">0</span></p>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
